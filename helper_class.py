@@ -6,6 +6,25 @@ from google.auth import default
 import pandas as pd
 
 class GoogleSheets:
+    """
+    A class used to interact with googlesheets using python in Colab notebook
+
+    Attributes
+    ----------
+    sheet_url : str
+        a formatted string to print out what the animal says
+    sheet_name : str
+        the file of the GoogleSheet folder a user wants to use
+    work_sheet : str
+        a specific sheet in the Googlesheet file a user needs to access
+    
+    Methods
+    -------
+    returnClientObject(object_cred)
+        returns credentials to interact with users googlesheets
+   
+    
+    """
 
   def __init__(self,sheet_url,sheet_name,work_sheet):
     
